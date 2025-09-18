@@ -330,6 +330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e19c5c3a1183f0143be3b8f85418c1f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallController
+  gameController: {fileID: 0}
   speed: 10
   direction: {x: 0, y: 0}
 --- !u!212 &395030296
@@ -720,6 +721,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInput
   paddleController1: {fileID: 8937632}
   paddleController2: {fileID: 1472693525}
+  textController: {fileID: 0}
 --- !u!4 &651489597
 Transform:
   m_ObjectHideFlags: 0
@@ -979,8 +981,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15d26d6d59ce712438f9752b80a2beff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameController
-  player1Score: 0
-  player2Score: 0
+  textController: {fileID: 0}
+  playerInput: {fileID: 0}
+  ball: {fileID: 0}
+  paddle1: {fileID: 0}
+  paddle2: {fileID: 0}
 --- !u!4 &828881472
 Transform:
   m_ObjectHideFlags: 0
@@ -1709,6 +1714,7 @@ MonoBehaviour:
   p2Score: {fileID: 1689651649}
   p1Controls: {fileID: 1191075332}
   p2Controls: {fileID: 1146415995}
+  gameComplete: {fileID: 0}
 --- !u!4 &1399050739
 Transform:
   m_ObjectHideFlags: 0
